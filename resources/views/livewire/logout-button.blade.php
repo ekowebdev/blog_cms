@@ -1,0 +1,1 @@
+<x-mary-menu-item icon="o-power" title="{{ __('layout.logout_title') }}" wire:click="logout" />
