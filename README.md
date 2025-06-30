@@ -13,6 +13,7 @@ Blog CMS is a Headless Content Management System built with **Laravel** and the 
 - **Laravel Sanctum** – API token-based authentication
 - **Spatie Laravel Permission** – Role-based access control (RBAC)
 - **Laravel Localization** – Multi-language support
+- **Laravel Livewire Filemanager** – File Manager to manage file and folders 
 - **Laravel Scramble** – Automatic API documentation
 - **Trix Editor** – WYSIWYG content editor
 
