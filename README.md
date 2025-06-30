@@ -54,13 +54,13 @@ php artisan queue:work
 
 ### There are two user roles created by default:
 
-###🔸Admin
+🔸Admin
 - Email: admin@mail.com
 - Password: 12345678
 - Role: Admin
-- Access: Full access to manage content
+- Access: Full access to manage all content
 
-###🔸Viewer
+🔸Viewer
 - Email: eko@mail.com
 - Password: 12345678
 - Role: Viewer
