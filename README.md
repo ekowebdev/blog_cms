@@ -47,26 +47,29 @@ php artisan migrate --seed
 npm install
 npm run dev
 php artisan serve
+php artisan queue:work
 ```
 
 ## 👤 Default Login Accounts
+
 ### There are two user roles created by default:
 
-🔸 Admin
-Email: admin@mail.com
-Password: 12345678
-Role: Admin
-Access: Full access to manage content
+###🔸Admin
+- Email: admin@mail.com
+- Password: 12345678
+- Role: Admin
+- Access: Full access to manage content
 
-🔸 Viewer
-Email: eko@mail.com
-Password: 12345678
-Role: Viewer
-Access: Limited access (read-only or customized based on permission settings)
+###🔸Viewer
+- Email: eko@mail.com
+- Password: 12345678
+- Role: Viewer
+- Access: Limited access (read-only or customized based on permission settings)
 
 ---
 
 ## 📚 API Documentation
+
 ### After starting the server, you can access the auto-generated API documentation via Scramble at:
 
 ```bash
