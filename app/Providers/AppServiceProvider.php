@@ -2,9 +2,8 @@
 
 namespace App\Providers;
 
-use Dedoc\Scramble\Scramble;
+use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\ServiceProvider;
-use Dedoc\Scramble\Support\Generator\OpenApi;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -21,8 +20,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        Scramble::extendOpenApi(function (OpenApi $openApi) {
-            //
+        Gate::define('viewDocsApi', function() {
+            // Allow in local or production
+            if (!app()->environment('staging')) {
+                return true;
+            }
         });
     }
 }
