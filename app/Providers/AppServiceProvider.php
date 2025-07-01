@@ -20,11 +20,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        Gate::define('viewDocsApi', function() {
-            // Allow in local or production
-            if (!app()->environment('staging')) {
-                return true;
-            }
-        });
+        Gate::define('viewApiDocs', fn () => !app()->environment('staging'));
     }
 }
